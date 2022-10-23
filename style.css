@@ -1,0 +1,161 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif !important;
+}
+a{
+    text-decoration: none;
+    color: initial;
+}
+
+:root{
+/*   colors */
+  --clr-primary-700: #0151B5;
+  --clr-primary-900: #001132;
+  --clr-secondary-100: #fff;
+  --clr-secondary-500: #C6C6C6;
+  --clr-secondary-700: #474747;
+
+/* spacing */
+  --space-100: .5rem;
+  --space-150: 1rem;
+  --space-200: 1.5rem;  
+
+  --radius-1: 5px;
+
+  --carousel-height: 18rem;
+/* font sizes */
+  --text-800: 17.5px;
+  --text-700: 16px;
+  --text-650: 14.5px;
+  --text-600: 14px;
+  --text-500: 11.6px;
+  
+}
+
+/* utility Classes */
+.bg-primary{
+    background-color: var(--clr-primary-900);
+}
+.section{
+  margin-bottom: 3rem;  
+}
+.title{
+  font-size: var(--text-800);
+  font-weight: bold;
+  margin-bottom: var(--space-200);
+  text-align: center;
+}
+.button{
+    padding: var(--space-100) var(--space-150);
+    color: white;
+    font-weight: bold;
+    background-color: var(--clr-primary-700);
+    border-radius: var(--radius-1);
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.flex-between{
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.scroll-x{
+    overflow-x: scroll;
+}
+
+
+.activity{
+    background: whitesmoke;
+    /* width: 150px; */
+    height: 80px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #70707054;
+}
+.upcomming__activity:not(:last-child){
+    margin-right: 1rem;
+}
+.upcomming__activity{
+    background: blue;
+    height: 156px;
+    width: 164px;
+    flex-shrink: 0;
+}
+.departments__introText{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: var(--text-650)
+}
+.departments__image{
+    width: 90%;
+    height: 20rem;
+    margin: auto;
+}
+/* .show{
+    top: 4.5rem;
+    left: 0;
+} */
+
+/* navbar styling  */
+/* nav{
+    position: relative;
+    padding: 1.2rem;
+}
+nav .nav__navLinks{
+    top: -80rem;
+    left: 0;
+    width: 100%;
+    background: whitesmoke;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+
+.nav__navLinks > a {
+    padding: 1rem 0;
+    background: wheat;
+    width: 100%;
+    text-align: center;
+}
+
+.nav__navLinks a:hover{
+    background: whitesmoke;
+} */
+
+
+/* navbar styling */
+nav .navbar-toggler, nav .navbar-toggler:focus-visible{
+    border: none !important;
+}
+
+nav .nav-item{
+    text-align: center;
+}
+
+
+/* banner section */
+.carousel-item img{
+    width: 100%;
+    margin: auto;
+    height: var(--carousel-height)
+}
