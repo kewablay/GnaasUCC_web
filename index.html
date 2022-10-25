@@ -12,21 +12,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <!-- <nav class="flex flex-between">
-        <div><img src="assets/gnass-logo-mobile.png" alt=""></div>
-        <div class="nav__navLinks">
-            <a href="#">Home</a>
-            <a href="#">Events</a>
-            <a href="#">Gallery</a>
-            <a href="#">Departments</a>
-        </div>
-        <div>
-            <a href="#"><img src="assets/menu-icon.png" alt=""></a>
-        </div>
-    </nav> -->
-
-    <!-- Navbar section -->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="assets/gnass-logo-mobile.png" alt=""></a>
@@ -67,13 +52,13 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/gnass-choir.jpg" alt="Los Angeles" class="d-block" >
+                <img src="assets/gnass-choir.jpg" alt="gnass choir" class="d-block" >
             </div>
             <div class="carousel-item">
-                <img src="assets/banner1.jpg" alt="Chicago" class="d-block" >
+                <img src="assets/banner1.jpg" alt="executives" class="d-block" >
             </div>
             <div class="carousel-item">
-                <img src="assets/banner2.jpg" alt="New York" class="d-block" >
+                <img src="assets/banner2.jpg" alt="house of praise" class="d-block" >
             </div>
             </div>
             
@@ -93,20 +78,76 @@
     <!-- Weekly Activities -->
     <section class="activities section container">
         <h3 class="title">Weekly Activities</h3>
-        <div class="row mb-4">
-            <div class="col-6 ">
-                <div class="activity"></div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="activity">
+                    <!-- the circle on the card -->
+                    <div class="activities__day"> SUN</div>
+
+                    <!-- Inner text -->
+                    <div class="activities__info ">
+                        <p class="small-text">7pm - 8pm</p>
+                        <p>Bible Studies</p>
+                    </div>
+
+                    <!-- bottom image -->
+                    <div class="activities__image">
+                        <img class="img fluid img-fit" src="assets/bible-studies.jpg" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="col-6 ">
-                <div class="activity"></div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="activity">
+                     <!-- the circle on the card -->
+                     <div class="activities__day"> WED</div>
+
+                     <!-- Inner text -->
+                     <div class="activities__info ">
+                         <p class="small-text">7pm - 8pm</p>
+                         <p>Wednesday Prayers</p>
+                     </div>
+ 
+                     <!-- bottom image -->
+                     <div class="activities__image">
+                         <img class="img fluid img-fit" src="assets/prayers.webp" alt="">
+                     </div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-6 ">
-                <div class="activity"></div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="activity">
+                     <!-- the circle on the card -->
+                    <div class="activities__day"> FRI</div>
+
+                    <!-- Inner text -->
+                    <div class="activities__info ">
+                        <p class="small-text">7pm - 8pm</p>
+                        <p>Sabbath School Service</p>
+                    </div>
+
+                    <!-- bottom image -->
+                    <div class="activities__image">
+                        <img class="img fluid img-fit" src="assets/sabbath.jpeg" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="col-6 ">
-                <div class="activity"></div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="activity">
+                     <!-- the circle on the card -->
+                    <div class="activities__day"> SAT</div>
+
+                    <!-- Inner text -->
+                    <div class="activities__info ">
+                        <p class="small-text">7pm - 8pm</p>
+                        <p>Vesper Service</p>
+                    </div>
+
+                    <!-- bottom image -->
+                    <div class="activities__image">
+                        <img class="img fluid img-fit" src="assets/vesper.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -116,13 +157,17 @@
     <!-- Upcomming Activities -->
     <section class="upcomming section container">
         <h3 class="title">Upcomming Activities</h3>
-        <div class="scroll-x flex">
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
+        <div class="scroll-x hide-scrollbar flex">
+            <div class="custom-card ">
+                <img src="assets/dinner.jpg" alt="">
+            </div>
+            <div class="custom-card "> <img src="assets/rhetoric.jpg" alt=""></div>
+            <div class="custom-card "> <img src="assets/harvest.jpg" alt=""></div>
+            <div class="custom-card ">
+                <img src="assets/dinner.jpg" alt="">
+            </div>
+            <div class="custom-card "><img src="assets/rhetoric.jpg" alt=""></div>
+            <div class="custom-card "> <img src="assets/harvest.jpg" alt=""></div>
         </div>
     </section>
 
@@ -131,13 +176,13 @@
     <!-- Recent Activities -->
     <section class="recent section container">
         <h3 class="title">Recent Activities</h3>
-        <div class="scroll-x flex">
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
+        <div class="scroll-x hide-scrollbar flex">
+            <div class="custom-card "><img src="assets/hop.jpg" alt=""></div>
+            <div class="custom-card "><img src="assets/bls.jpg" alt=""></div>
+            <div class="custom-card "><img src="assets/hominis.jpg" alt=""></div>
+            <div class="custom-card "><img src="assets/hop.jpg" alt=""></div>
+            <div class="custom-card "><img src="assets/bls.jpg" alt=""></div>
+            <div class="custom-card "><img src="assets/hominis.jpg" alt=""></div>
         </div>
     </section>
 
@@ -147,7 +192,7 @@
     <section class="departments section container">
         
         <div class="row gap-5">
-            <div class="col-12">
+            <div class="col-12 col-md-4 col-lg-4">
                 <h3 class="title">Departments</h3>
                 <p class="departments__introText">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
@@ -157,8 +202,10 @@
                 </div>
 
             </div>
-            <div class="col-12 img-fluid bg-primary">
-                <div class="bg-primary departments__image"></div>
+            <div class="col-12 col-md-7 col-lg-7 ">
+                <div class="bg-primary departments__image">
+                    <!-- <img class="img-fluid" src="assets/departments-img.png" alt=""> -->
+                </div>
             </div>
         </div>
 
@@ -169,10 +216,27 @@
     <section class="patrons section container">
         <h3 class="title">Patrons</h3>
 
-        <div class="scroll-x flex">
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
-            <div class="upcomming__activity "></div>
+        <div class="bg-clr-primary bg-stretch">
+            <div class="scroll-x hide-scrollbar flex flex-center">
+                <div class="patron-card ">
+                    <div class="mb-3 patrons__img overflow-hidden"><img class="img-fluid img-fit" src="assets/patron1.jpg" alt=""></div>
+                    <div>
+                        <p class="sub-title">Pr. Prof Yaw Afari Ankomah</p>
+                    </div>
+                </div>
+                <div class="patron-card ">
+                    <div class="mb-3 patrons__img overflow-hidden"></div>
+                    <div>
+                        <p class="sub-title">Pr. Prof Yaw Afari Ankomah</p>
+                    </div>
+                </div>
+                <div class="patron-card ">
+                    <div class="mb-3 patrons__img overflow-hidden"></div>
+                    <div>
+                        <p class="sub-title">Pr. Prof Yaw Afari Ankomah</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -180,7 +244,128 @@
     <!-- contact Us  -->
     <section class="contact section container ">
         <h3 class="title">Contact Us</h3>
+
+        <div class="contact__map">
+            <img class="img-fluid img-fit" src="assets/map.png" alt="">
+            <div class="contact__getInTouch">
+                <p class="heading">Get in Touch</p>
+                <div class="row">
+                    <div class="contact__icon col-3">
+                        <div>
+                            <img class="img-fluid img-fit" src="assets/phone-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="contact__info col-9">
+                        <p class="sub-title">Phone</p>
+                        <p class="small-text">+2330554378923</p>
+                    </div>
+                </div>
+                <!-- contact -->
+                <div class="row">
+                    <div class="contact__icon col-3">
+                        <div>
+                            <img class="img-fluid img-fit" src="assets/facebook-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="contact__info col-9">
+                        <p class="sub-title">Facebook</p>
+                        <p class="small-text">https://web.facebook.com/gnassuccpage</p>
+                    </div>
+                </div>
+                <!-- contact -->
+                <div class="row">
+                    <div class="contact__icon col-3">
+                        <div>
+                            <img class="img-fluid img-fit" src="assets/twitter-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="contact__info col-9">
+                        <p class="sub-title">Twitter</p>
+                        <p class="small-text">https://twitter.com/gnass_ucc</p>
+                    </div>
+                </div>
+                <!-- contact -->
+                <div class="row">
+                    <div class="contact__icon col-3">
+                        <div>
+                            <img class="img-fluid img-fit" src="assets/isntagram-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="contact__info col-9">
+                        <p class="sub-title">Instagram</p>
+                        <p class="small-text">https://instagram/gnass_ucc</p>
+                    </div>
+                </div>
+                <!-- contact -->
+            </div>
+        </div>
     </section>
+
+
+    <!-- Developers -->
+    <section class="developers section container">
+        <h3 class="title">Developers</h3>
+
+        <div>
+            <div class="scroll-x hide-scrollbar flex flex-center">
+                <div>
+                    <div class="custom-card "><img class="img-fluid img-fit" src="assets/kewablay.jpg" alt=""></div>
+                    <div class="developers__info">
+                        <p class="sub-title">Kojo Kewa Junior</p>
+                        <p class="medium-text">UI/UX & Frontend Development</p>
+                        <a href="https://gh.linkedin.com/in/kewa-blay-47883a206" target="_blank" class="small-text tag">Connect on LinkedIn</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="custom-card "><img class="img-fluid img-fit" src="assets/alfred.jpg" alt=""></div>
+                    <div class="developers__info">
+                        <p class="sub-title">Alfred Owusu Acheampong</p>
+                        <p class="medium-text">Backend development</p>
+                        <a href="https://gh.linkedin.com/in/alfred-owusu-acheampong-5a1b57172" target="_blank" class="small-text tag">Connect on LinkedIn</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="custom-card "></div>
+                    <div class="developers__info">
+                        <p class="sub-title">Developers Name</p>
+                        <p class="medium-text">Developer role</p>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer bg-clr-primary container-fluid">
+
+        <div class="row">
+            <div class="col-12 footer__col">
+                <div>
+                    <img src="assets/gnass-footer-logo-mobile.png" alt="Gnass Ucc">
+                </div>
+            </div>
+            <div class="col-12 footer__col">
+                <a href="#">Gallery</a>
+                <a href="#">Events</a>
+                <a href="#">Departments</a>
+            </div>
+            <div class="col-12 footer__col">
+                <a href="#">Patrons</a>
+                <a href="#">Upcomming Activities</a>
+                <a href="#">Developers</a>
+            </div>
+            <div class="col-12 footer__col">
+                <a href="#">Social media</a>
+                <div class="footer__icons">
+                    <a href="#"><img src="assets/facebook-icon.png" alt=""></a>
+                    <a href="#"><img src="assets/isntagram-icon.png" alt=""></a>
+                    <a href="#"><img src="assets/twitter-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
 
 
