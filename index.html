@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="assets/gnaas-favicon.png" type="image/png">      <title>Gnaas UCC</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap link -->
@@ -78,8 +78,8 @@
     <!-- Weekly Activities -->
     <section class="activities section container">
         <h3 class="title">Weekly Activities</h3>
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="activity">
                     <!-- the circle on the card -->
                     <div class="activities__day"> SUN</div>
@@ -96,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="activity">
                      <!-- the circle on the card -->
                      <div class="activities__day"> WED</div>
@@ -114,8 +114,8 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="activity">
                      <!-- the circle on the card -->
                     <div class="activities__day"> FRI</div>
@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="activity">
                      <!-- the circle on the card -->
                     <div class="activities__day"> SAT</div>
@@ -152,37 +152,40 @@
         </div>
 
     </section>
+    <a href=""></a>
 
     
     <!-- Upcomming Activities -->
-    <section class="upcomming section container">
+    <section class="upcomming section container" style="position: relative;">
+        <img src="assets/arrow-right.png" class="arrow" id="arrow-right" alt="" onclick="scrollRight('upcomming')">
+        <img src="assets/arrow-right.png" class="arrow" id="arrow-left" alt="" onclick="scrollContentLeft('upcomming')">
+            
         <h3 class="title">Upcomming Activities</h3>
-        <div class="scroll-x hide-scrollbar flex">
-            <div class="custom-card ">
-                <img src="assets/dinner.jpg" alt="">
-            </div>
-            <div class="custom-card "> <img src="assets/rhetoric.jpg" alt=""></div>
-            <div class="custom-card "> <img src="assets/harvest.jpg" alt=""></div>
-            <div class="custom-card ">
-                <img src="assets/dinner.jpg" alt="">
-            </div>
-            <div class="custom-card "><img src="assets/rhetoric.jpg" alt=""></div>
-            <div class="custom-card "> <img src="assets/harvest.jpg" alt=""></div>
+        <div class="scroll-x hide-scrollbar flex " id="upcomming-content">
+            <a href="./assets/dinner.jpg" class="custom-card "><img src="assets/dinner.jpg" alt=""></a href="/assets/">
+            <a href="./assets/rhetoric.jpg" class="custom-card "> <img src="assets/rhetoric.jpg" alt=""></a href="/assets/">
+            <a href="./assets/harvest.jpg" class="custom-card "> <img src="assets/harvest.jpg" alt=""></a href="/assets/">
+            <a href="./assets/dinner.jpg" class="custom-card "><img src="assets/dinner.jpg" alt=""></a href="/assets/">
+            <a href="./assets/rhetoric.jpg" class="custom-card "><img src="assets/rhetoric.jpg" alt=""></a href="/assets/">
+            <a href="./assets/harvest.jpg" class="custom-card "> <img src="assets/harvest.jpg" alt=""></a>
         </div>
     </section>
 
 
 
     <!-- Recent Activities -->
-    <section class="recent section container">
+    <section class="recent section container" style="position: relative;">
+        <img src="assets/arrow-right.png" class="arrow" id="arrow-right" alt="" onclick="scrollRight('recent')">
+            <img src="assets/arrow-right.png" class="arrow" id="arrow-left" alt="" onclick="scrollContentLeft('recent')">
+            
         <h3 class="title">Recent Activities</h3>
-        <div class="scroll-x hide-scrollbar flex">
-            <div class="custom-card "><img src="assets/hop.jpg" alt=""></div>
-            <div class="custom-card "><img src="assets/bls.jpg" alt=""></div>
-            <div class="custom-card "><img src="assets/hominis.jpg" alt=""></div>
-            <div class="custom-card "><img src="assets/hop.jpg" alt=""></div>
-            <div class="custom-card "><img src="assets/bls.jpg" alt=""></div>
-            <div class="custom-card "><img src="assets/hominis.jpg" alt=""></div>
+        <div class="scroll-x hide-scrollbar flex" id="recent-content">
+            <a href="./assets/hop.jpg" class="custom-card "><img src="assets/hop.jpg" alt=""></a href="./assets/">
+            <a href="./assets/bls.jpg" class="custom-card "><img src="assets/bls.jpg" alt=""></a href="./assets/">
+            <a href="./assets/hominis.jpg" class="custom-card "><img src="assets/hominis.jpg" alt=""></a href="./assets/">
+            <a href="./assets/hop.jpg" class="custom-card "><img src="assets/hop.jpg" alt=""></a href="./assets/">
+            <a href="./assets/bls.jpg" class="custom-card "><img src="assets/bls.jpg" alt=""></a href="./assets/">
+            <a href="./assets/hominis.jpg" class="custom-card "><img src="assets/hominis.jpg" alt=""></a href="./assets/">
         </div>
     </section>
 
@@ -192,13 +195,15 @@
     <section class="departments section container">
         
         <div class="row gap-5">
-            <div class="col-12 col-md-4 col-lg-4">
-                <h3 class="title">Departments</h3>
-                <p class="departments__introText">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
-                </p>
-                <div class="flex">
-                    <a href="#" class="button mx-auto mt-3"> Checkout</a>
+            <div class="col-12 col-md-4 col-lg-4 flex flex-center">
+                <div class="departments__wrapper">
+                    <h3 class="title">Departments</h3>
+                    <p class="departments__introText">
+                        Featuring the various departments who render their services to ensure the smooth operation of the church.                    </p>
+                    <div class="flex">
+                        <a href="#" id="dept-cta" class="button mx-auto mt-3"> Checkout <span><img style="margin-left: .3rem;" src="assets/btn-arrow.png" alt=""></span></a>
+                    </div>
+
                 </div>
 
             </div>
@@ -227,13 +232,13 @@
                 <div class="patron-card ">
                     <div class="mb-3 patrons__img overflow-hidden"></div>
                     <div>
-                        <p class="sub-title">Pr. Prof Yaw Afari Ankomah</p>
+                        <p class="sub-title">Eld. Dr. Kwame Agyemang Koforobour</p>
                     </div>
                 </div>
                 <div class="patron-card ">
                     <div class="mb-3 patrons__img overflow-hidden"></div>
                     <div>
-                        <p class="sub-title">Pr. Prof Yaw Afari Ankomah</p>
+                        <p class="sub-title">Eld.Dr. Edger Takyi Akonor</p>
                     </div>
                 </div>
             </div>
@@ -267,10 +272,10 @@
                             <img class="img-fluid img-fit" src="assets/facebook-icon.png" alt="">
                         </div>
                     </div>
-                    <div class="contact__info col-9">
+                    <a href="https://web.facebook.com/gnassuccpage" target="_blank"  class="contact__info col-9">
                         <p class="sub-title">Facebook</p>
                         <p class="small-text">https://web.facebook.com/gnassuccpage</p>
-                    </div>
+                    </a>
                 </div>
                 <!-- contact -->
                 <div class="row">
@@ -279,10 +284,10 @@
                             <img class="img-fluid img-fit" src="assets/twitter-icon.png" alt="">
                         </div>
                     </div>
-                    <div class="contact__info col-9">
+                    <a href="https://twitter.com/gnass_ucc" target="_blank" class="contact__info col-9">
                         <p class="sub-title">Twitter</p>
                         <p class="small-text">https://twitter.com/gnass_ucc</p>
-                    </div>
+                    </a>
                 </div>
                 <!-- contact -->
                 <div class="row">
@@ -291,10 +296,10 @@
                             <img class="img-fluid img-fit" src="assets/isntagram-icon.png" alt="">
                         </div>
                     </div>
-                    <div class="contact__info col-9">
+                    <a href="https://instagram/gnass_ucc" target="_blank" class="contact__info col-9">
                         <p class="sub-title">Instagram</p>
                         <p class="small-text">https://instagram/gnass_ucc</p>
-                    </div>
+                    </a >
                 </div>
                 <!-- contact -->
             </div>
@@ -309,6 +314,14 @@
         <div>
             <div class="scroll-x hide-scrollbar flex flex-center">
                 <div>
+                    <div class="custom-card "><img class="img-fluid img-fit" src="assets/alfred.jpg" alt=""></div>
+                    <div class="developers__info">
+                        <p class="sub-title">Alfred O. Acheampong</p>
+                        <p class="medium-text">Backend development</p>
+                        <a href="https://gh.linkedin.com/in/alfred-owusu-acheampong-5a1b57172" target="_blank" class="small-text tag">Connect on LinkedIn</a>
+                    </div>
+                </div>
+                <div>
                     <div class="custom-card "><img class="img-fluid img-fit" src="assets/kewablay.jpg" alt=""></div>
                     <div class="developers__info">
                         <p class="sub-title">Kojo Kewa Junior</p>
@@ -316,21 +329,14 @@
                         <a href="https://gh.linkedin.com/in/kewa-blay-47883a206" target="_blank" class="small-text tag">Connect on LinkedIn</a>
                     </div>
                 </div>
-                <div>
-                    <div class="custom-card "><img class="img-fluid img-fit" src="assets/alfred.jpg" alt=""></div>
-                    <div class="developers__info">
-                        <p class="sub-title">Alfred Owusu Acheampong</p>
-                        <p class="medium-text">Backend development</p>
-                        <a href="https://gh.linkedin.com/in/alfred-owusu-acheampong-5a1b57172" target="_blank" class="small-text tag">Connect on LinkedIn</a>
-                    </div>
-                </div>
-                <div>
+                <!-- <div>
                     <div class="custom-card "></div>
                     <div class="developers__info">
                         <p class="sub-title">Developers Name</p>
                         <p class="medium-text">Developer role</p>
+                        <a href="" target="_blank" class="small-text tag">Connect on LinkedIn</a>
                     </div>
-                </div>
+                </div> -->
               
             </div>
         </div>
@@ -340,22 +346,22 @@
     <footer class="footer bg-clr-primary container-fluid">
 
         <div class="row">
-            <div class="col-12 footer__col">
+            <div class="footer__col col-12 col-md-4 col-lg-3">
                 <div>
                     <img src="assets/gnass-footer-logo-mobile.png" alt="Gnass Ucc">
                 </div>
             </div>
-            <div class="col-12 footer__col">
+            <div class="footer__col col-12 col-md-4 col-lg-3">
                 <a href="#">Gallery</a>
                 <a href="#">Events</a>
                 <a href="#">Departments</a>
             </div>
-            <div class="col-12 footer__col">
+            <div class="footer__col col-12 col-md-4 col-lg-3">
                 <a href="#">Patrons</a>
                 <a href="#">Upcomming Activities</a>
                 <a href="#">Developers</a>
             </div>
-            <div class="col-12 footer__col">
+            <div class="footer__col col-12 col-md-4 col-lg-3">
                 <a href="#">Social media</a>
                 <div class="footer__icons">
                     <a href="#"><img src="assets/facebook-icon.png" alt=""></a>
@@ -369,6 +375,35 @@
 
 
 
+
+<script>
+   
+    function scrollRight(element){
+        console.log(element)
+        if(element == "upcomming"){
+            console.log("Function triggered")
+            document.querySelector("#upcomming-content").scrollLeft += 500;
+        }
+        else if(element =="recent"){
+            document.querySelector("#recent-content").scrollLeft += 500;
+        }
+    }
+    function scrollContentLeft(element){
+        console.log(element)
+        if(element == "upcomming"){
+            console.log("Function triggered")
+            document.querySelector("#upcomming-content").scrollLeft -= 500;
+        }
+        else if(element =="recent"){
+            document.querySelector("#recent-content").scrollLeft -= 500;
+        }
+    }
+
+
+
+
+
+</script>
 
 
 
